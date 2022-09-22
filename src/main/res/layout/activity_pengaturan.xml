@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#E8E8E8"
+    android:layout_height="match_parent"
+    tools:context=".Pengaturan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Pengaturan"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/text_gantipassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganti Password"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password Saat Ini"
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/passwordSekarang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#808080"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password Baru"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/passwordBaru"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#808080"
+                android:hint="@string/app_name"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/simpan_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#4CAF50"
+                android:text="Simpan"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/kembali"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_red_light"
+                android:text="Kembali"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_marginTop="100dp">
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="-8dp"
+                    android:src="@drawable/_841720100" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="-15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About this APP."
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aplikasi ini dibuat oleh :"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama : Rhevy Lis Alfianny"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIM : 1841720100"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal : 18 September 2022"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
